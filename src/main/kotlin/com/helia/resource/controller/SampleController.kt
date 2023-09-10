@@ -20,4 +20,9 @@ class SampleController {
     fun write(@RequestParam name: String): String {
         return "success"
     }
+
+    @GetMapping("/resource/test")
+    fun test(@RequestParam name: String): String {
+        return "success"
+    }
 }
